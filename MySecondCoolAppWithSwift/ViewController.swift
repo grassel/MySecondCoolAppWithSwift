@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet weak var theTextField: UITextField!
+    @IBOutlet weak var theLabel: UILabel!
+    @IBAction func theButtonMethod(sender: AnyObject) {
+        theLabel.text = theTextField.text;
+        theTextField.resignFirstResponder();
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
